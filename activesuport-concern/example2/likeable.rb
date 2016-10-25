@@ -3,12 +3,8 @@ module Likeable
 
   included do
 
-    def hello
-      puts "Hello"
-    end
-
-    def yop
-      puts "yop"
+    def like
+      puts "Like"
     end
   end
 
