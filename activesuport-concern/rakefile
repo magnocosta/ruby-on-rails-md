@@ -4,9 +4,12 @@ $stdout.sync = true
 desc 'Open Console'
 task :console do
   require 'pry'
-  require_relative 'example/commentable.rb'
-  require_relative 'example/likeable.rb'
-  require_relative 'example/post.rb'
+  require 'active_support/concern'
+
+  require_relative 'example2/commentable.rb'
+  require_relative 'example2/likeable.rb'
+  require_relative 'example2/social.rb'
+  require_relative 'example2/post.rb'
 
   ARGV.clear
   Pry.start
