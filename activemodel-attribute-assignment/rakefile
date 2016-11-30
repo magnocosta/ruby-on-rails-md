@@ -1,0 +1,13 @@
+# require 'bundler/gem_tasks'
+$stdout.sync = true
+
+desc 'Open Console'
+task :console do
+  require 'pry'
+  
+  require 'active_model'
+  require_relative 'example1/my_object'
+
+  ARGV.clear
+  Pry.start
+end
