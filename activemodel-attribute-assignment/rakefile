@@ -7,6 +7,7 @@ task :console do
   
   require 'active_model'
   require_relative 'example1/my_object'
+  require_relative 'example1/my_hash'
 
   ARGV.clear
   Pry.start
